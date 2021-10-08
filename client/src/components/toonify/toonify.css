@@ -1,0 +1,141 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    background-color: black;
+  }
+  .body-div{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .box-div{
+    height: 100%;
+    width: 46%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .toonify-img{
+    width: 70%;
+    border: 1px solid black;
+    border-radius: 50%;
+  }
+  .res-img{
+    animation: glow 2s infinite;
+  }
+  
+  @keyframes glow {
+    0%{
+      box-shadow: 0px 0px 14px 6px aqua;
+    }
+    20%{
+      box-shadow: 0px 0px 14px 6px rgb(52, 238, 27);
+    }
+    40%{
+      box-shadow: 0px 0px 14px 6px rgb(17, 50, 238);
+    }
+    60%{
+      box-shadow: 0px 0px 14px 6px rgb(253, 0, 0);
+    }
+    100%{
+      box-shadow: 0px 0px 14px 6px yellow;
+    }
+  }
+  .img-up{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .paste-url{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 20px;
+  }
+  .url-inp{
+    width: 300px;
+    height: 30px;
+    background-color: black;
+    border: 2px solid aqua;
+    color: rgb(196, 188, 188);
+    border-radius: 20px;
+    padding: 0px 8px;
+  }
+  .url-inp:focus{
+    outline: none;
+    box-shadow: 0px 0px 6px 2px aqua;
+  }
+  .url-btn{
+    height: 30px;
+    width: 80px;
+    margin-left: 8px;
+    background: none;
+    border: 2px solid aqua;
+    color: aqua;
+    border-radius: 14px;
+  }
+  .url-btn:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+    animation: border-glow 2s infinite;
+    border: none;
+  }
+  @keyframes border-glow {
+    0%{
+      box-shadow: 0px 0px 0px 0px aqua;
+    }
+    50%{
+      box-shadow: 0px 0px 6px 2px aqua;
+    }
+    100%{
+      box-shadow: 0px 0px 0px 0px aqua;
+    }
+  }
+  .toonify-file{
+    display: none;
+  }
+  .image-upload-label{
+    font-size: 20px;
+    cursor: pointer;
+    border: 2px solid aqua;
+    padding: 6px 10px;
+    border-radius: 10px;
+  }
+  .image-upload-label:hover{
+    animation: border-glow 2s infinite;
+  }
+  
+  @media only screen and (max-width: 650px) {
+    .box-div{
+      width: 100%;
+      height: 50%;
+      padding-top: 20px;
+    }
+    .url-inp{
+      width: 220px;
+      height: 30px;
+    }
+  }
+  .download-btn{
+    font-size: 20px;
+    cursor: pointer;
+    border: 2px solid aqua;
+    padding: 6px 10px;
+    border-radius: 10px;
+    background-color: black;
+    color: aqua;
+    margin-top: 20px;
+  }
+  .download-btn:hover{
+    animation: border-glow 2s infinite;
+  }
